@@ -22,6 +22,7 @@
     <tbody>
     <%
         for (Member member : members) {
+            // out도 그냥 쓸수 있는 약어임
             out.write("    <tr>");
             out.write("        <td>" + member.getId() + "</td>");
             out.write("        <td>" + member.getUsername() + "</td>");

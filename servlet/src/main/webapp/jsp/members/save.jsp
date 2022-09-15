@@ -2,7 +2,7 @@
 <%@ page import="hello.servlet.domain.member.Member" %>
 <%@ page import="hello.servlet.domain.member.MemberRepository" %>
 <%
-    //request, response 사용 가능
+    //request, response는 그냥 사용 가능
     MemberRepository memberRepository = MemberRepository.getInstance();
 
     System.out.println("MemberSaveServlet.service");
@@ -11,7 +11,6 @@
 
     Member member = new Member(username, age);
     memberRepository.save(member);
-
 %>
 <html>
 <head>
